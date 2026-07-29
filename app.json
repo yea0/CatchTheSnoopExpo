@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "CatchTheSnoopExpo",
+    "slug": "CatchTheSnoopExpo",
+    "owner": "yasinemre001",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yasinemre005.catchthesnoop"
+    },
+    "android": {
+      "package": "com.yasinemre005.catchthesnoop",
+      "adaptiveIcon": {
+        "backgroundColor": "#3b0764",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-audio",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#1b0533",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d4b8e8ef-53f1-4266-9cc2-36822f6571da"
+      }
+    }
+  }
+}
